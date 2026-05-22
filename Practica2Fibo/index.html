@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci en la Vida Real</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Matemáticas que resuelven problemas: Fibonacci en el Ahorro</h1>
+            <p><strong>Estudiante:</strong> Arturo Espinoza Carita</p>
+        </header>
+
+        <section id="contexto">
+            <h2>Contexto del Problema</h2>
+            <p>Se plantea la necesidad de planificar un ahorro mensual que no sea estático. Utilizando la serie de Fibonacci, el ahorro aumenta progresivamente mes a mes de forma estructurada, permitiendo metas financieras escalables.</p>
+        </section>
+
+        <section id="algoritmo">
+            <h2>Explicación del Algoritmo</h2>
+            <p>El algoritmo calcula la secuencia de Fibonacci iterativamente. Inicializa dos variables, suma sus valores para obtener el siguiente término, y actualiza las variables en cada ciclo, acumulando el monto total sin utilizar vectores.</p>
+        </section>
+
+        <section id="interaccion">
+            <h2>Simulador de Ahorro</h2>
+            <form id="formularioAhorro" onsubmit="return false;">
+                <label for="meses">Ingrese la cantidad de meses para el plan de ahorro:</label>
+                <input type="number" id="meses" required min="1">
+                <button type="button" onclick="calcularAhorro()">Calcular Plan</button>
+            </form>
+            <div id="resultado" class="caja-resultado">Aquí se mostrará la solución.</div>
+        </section>
+
+        <section id="conclusion">
+            <h2>Conclusión</h2>
+            <p>La sucesión de Fibonacci optimiza el esfuerzo financiero al distribuir la carga del ahorro, comenzando con montos pequeños que crecen de manera predecible y matemática.</p>
+        </section>
+
+        <section id="enlaces">
+            <h2>Enlaces del Proyecto</h2>
+            <ul>
+                <li><a href="#" target="_blank">Repositorio en GitHub</a></li>
+                <li><a href="#" target="_blank">Página Publicada (Live Demo)</a></li>
+            </ul>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

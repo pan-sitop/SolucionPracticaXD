@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simuladores Interactivos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Desafío: Simuladores Web</h1>
+
+        <section>
+            <h2>Simulador de Transferencia de Calor</h2>
+            <form id="form-enfriamiento" onsubmit="return false;">
+                <label for="t0">Temperatura Inicial (T0):</label>
+                <input type="number" id="t0" placeholder="Ingrese la temperatura inicial" required step="any">
+
+                <label for="ts">Temperatura del Entorno (Ts):</label>
+                <input type="number" id="ts" placeholder="Ingrese la temperatura del entorno" required step="any">
+
+                <label for="k">Constante (k):</label>
+                <input type="number" id="k" placeholder="Ingrese la constante" required step="any">
+
+                <label for="t">Tiempo en horas (t):</label>
+                <input type="number" id="t" placeholder="Ingrese el tiempo en horas" required step="any">
+
+                <button type="button" onclick="calcularEnfriamiento()">Calcular Temperatura</button>
+            </form>
+            <div id="resultado-enfriamiento" class="resultado"></div>
+        </section>
+
+        <section>
+            <h2>Calculador de Combinaciones Complejas</h2>
+            <form id="form-combinaciones" onsubmit="return false;">
+                <h3>Grupo 1</h3>
+                <label for="n1">Elementos (n1):</label>
+                <input type="number" id="n1" value="59" required min="1">
+                <label for="r1">Selección (r1):</label>
+                <input type="number" id="r1" value="5" required min="1">
+
+                <h3>Grupo 2</h3>
+                <label for="n2">Elementos (n2):</label>
+                <input type="number" id="n2" value="35" required min="1">
+                <label for="r2">Selección (r2):</label>
+                <input type="number" id="r2" value="1" required min="1">
+
+                <button type="button" onclick="calcularCombinaciones()">Calcular Total</button>
+            </form>
+            <div id="resultado-combinaciones" class="resultado"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

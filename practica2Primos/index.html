@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Primos en Seguridad</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Matemáticas que resuelven problemas: Códigos de Acceso Primos</h1>
+            <p><strong>Estudiante:</strong> Arturo Espinoza Carita</p>
+        </header>
+
+        <section id="contexto">
+            <h2>Contexto del Problema</h2>
+            <p>En seguridad informática, la integridad de las claves depende de propiedades matemáticas. Validar si un código numérico es primo es un paso fundamental para considerarlo como una semilla criptográfica segura frente a vulnerabilidades básicas[cite: 53, 58].</p>
+        </section>
+
+        <section id="algoritmo">
+            <h2>Explicación del Algoritmo</h2>
+            <p>El sistema toma el código ingresado y cuenta cuántos divisores exactos posee iterando desde el número uno hasta el propio número. Si el contador finaliza exactamente en dos (divisible solo por uno y por sí mismo), el algoritmo valida el código como primo[cite: 78, 116].</p>
+        </section>
+
+        <section id="interaccion">
+            <h2>Validador de Códigos</h2>
+            <form id="formularioPrimos" onsubmit="return false;">
+                <label for="numero">Ingrese un código numérico para evaluar su seguridad:</label>
+                <input type="number" id="numero" required min="1">
+                <button type="button" onclick="verificarPrimo()">Validar Código</button>
+            </form>
+            <div id="resultado" class="caja-resultado">Aquí se mostrará el veredicto de seguridad.</div>
+        </section>
+
+        <section id="conclusion">
+            <h2>Conclusión</h2>
+            <p>Los números primos actúan como barreras matemáticas robustas. Al no poseer múltiplos más allá de sí mismos, complican la factorización, haciendo que los sistemas de encriptación basados en ellos sean significativamente más difíciles de vulnerar[cite: 53, 87].</p>
+        </section>
+
+        <section id="enlaces">
+            <h2>Enlaces del Proyecto</h2>
+            <ul>
+                <li><a href="#" target="_blank">Repositorio en GitHub</a></li>
+                <li><a href="#" target="_blank">Página Publicada (Live Demo)</a></li>
+            </ul>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
